@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>On the Fluffy Couch</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div>
+      <%= render 'layouts/shared/header' %>
+      <%= render 'layouts/shared/navbar' %>
+    </div>
+    <%= yield %>
+  </body>
+  <footer class="footer">
+    <%= render 'layouts/shared/footer' %>
+  </footer>
+</html>
