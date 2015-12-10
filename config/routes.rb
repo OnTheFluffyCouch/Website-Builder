@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'blogs#index'
-  resources :artworks
+  root to: 'statics#index'
+  get 'signup' => 'users#new'
 end
