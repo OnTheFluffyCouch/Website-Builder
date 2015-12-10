@@ -1,3 +1,13 @@
+GIT
+  remote: git@github.com:kern/minitest-reporters.git
+  revision: 946094c56bed8cf7c44ebf545dbc9e57de30e98b
+  specs:
+    minitest-reporters (1.1.7)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,10 +46,12 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    ansi (1.5.0)
     arel (6.0.3)
     autoprefixer-rails (6.0.3)
       execjs
       json
+    bcrypt (3.1.10)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -116,6 +128,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
     ref (2.0.0)
+    ruby-progressbar (1.7.5)
     sass (3.4.19)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -156,12 +169,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   better_errors
   bootstrap-sass
   byebug
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  minitest-reporters!
   pg
   puma
   rails (= 4.2.4)
