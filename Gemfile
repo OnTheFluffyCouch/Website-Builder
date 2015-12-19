@@ -14,6 +14,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'nokogiri'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -25,6 +27,7 @@ group :development, :test do
   gem 'byebug'
   gem 'better_errors'
   gem 'minitest-reporters', git: 'git@github.com:kern/minitest-reporters.git'
+  gem 'faker'
 end
 
 group :development do
