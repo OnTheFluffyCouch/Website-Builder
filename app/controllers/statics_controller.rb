@@ -1,5 +1,5 @@
 class StaticsController < ApplicationController
-  def index
-
+  def about
+    render layout: 'about_layout'
   end
 end
